@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--primary-font-family);
+	width: 100vw;
+	min-height: 100dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-background-color);
+	color: var(--primary-text-color);
+	transition: var(--color-transition);
+}
+
+.container {
+	padding: 16px;
+	width: 260px;
+	text-align: center;
+	background-color: var(--primary-background-color);
+	border-radius: 10px;
+	box-shadow: 0 4px 12px var(--primary-transparent-color);
+}
+
+.container h1 {
+	color: var(--primary-text-color);
+}
+
+#date-of-birth {
+	margin-bottom: 12px;
+	padding: 8px;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid #CCC;
+	border-radius: 6px;
+}
+
+.result {
+	padding: 8px;
+	font-size: 14px;
+	background-color: var(--primary-background-color);
+	color: var(--secondary-text-color);
+	border: 1px solid #E5E7EB;
+	border-radius: 6px;
+}
+
+#theme-color-button {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary-text-color);
+	color: var(--primary-background-color);
+	border-radius: 50%;
+}
+
+#theme-color-button .icon {
+	width: 20px;
+	height: 20px;
+}
