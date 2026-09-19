@@ -5,18 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Calculadora de Idade</title>
+
+	<!-- Estilos -->
 	<link rel="stylesheet" href="https://nadsondejesusalmeida.github.io/assets/styles/root.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="https://nadsondejesusalmeida.github.io/style.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	
+	<!-- Scripts -->
+	<script src="script.js" type="module" defer></script>
+	<script src="https://nadsondejesusalmeida.github.io/assets/scripts/theme.js" type="module" defer></script>
 </head>
 <body>
 	<div class="container">
 		<h1>Calculadora de Idade</h1>
-		<input type="date" name="date-of-birth" id="date-of-birth" onchange="calculateAge()" />
+		<input type="date" name="date-of-birth" id="date-of-birth" />
 		<div class="result">Selecione seu aniversário</div>
 	</div>
 	<div id="theme-color-button" class="default"></div>
-	<script src="script.js" type="text/javascript" charset="utf-8"></script>
-	<script src="https://nadsondejesusalmeida.github.io/assets/scripts/theme.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
