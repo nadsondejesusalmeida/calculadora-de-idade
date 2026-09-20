@@ -18,8 +18,59 @@
 <body>
 	<div class="container">
 		<h1>Calculadora de Idade</h1>
-		<input type="date" name="date-of-birth" id="date-of-birth" />
-		<div class="result">Selecione seu aniversário</div>
+		<div class="input-field">
+			<input type="datetime-local" name="date-of-birth" id="date-of-birth" placeholder="Teste" required />
+			<label for="date-of-birth" class="text">Selecione seu calendário</label>
+		</div>
+		
+		<div class="datetime-display">
+			<!-- Grupo de Data -->
+			<div class="date-group">
+				<span class="title">Data</span>
+				<ul class="list">
+					<li>
+						<strong>Ano</strong>
+						<span id="year">0</span>
+					</li>
+					
+					<li>
+						<strong>Mês</strong>
+						<span id="month">0</span>
+					</li>
+					
+					<li>
+						<strong>Dia</strong>
+						<span id="day">0</span>
+					</li>
+				</ul>
+			</div> <!-- div#date-group -->
+
+			<!-- Grupo de Tempo -->
+			<div class="time-group">
+				<span class="title">Hora</span>
+				<ul class="list">
+					<li>
+						<strong>Hora</strong>
+						<span id="hour">0</span>
+					</li>
+					
+					<li>
+						<strong>Minuto</strong>
+						<span id="minute">0</span>
+					</li>
+					
+					<li>
+						<strong>Segundo</strong>
+						<span id="second">0</span>
+					</li>
+					
+					<li>
+						<strong>Milissegundo</strong>
+						<span id="millisecond">0</span>
+					</li>
+				</ul>
+			</div> <!-- div#time-group -->
+		</div> <!-- div#datetime-display -->
 	</div>
 	<div id="theme-color-button" class="default"></div>
 </body>

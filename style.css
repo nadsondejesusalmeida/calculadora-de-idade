@@ -6,14 +6,30 @@ body {
 
 .container {
 	padding: 16px;
-	width: 260px;
+	width: 95%;
 	text-align: center;
 	background-color: var(--primary-background-color);
+	border: 1.5px solid var(--primary-accent-color);
 	border-radius: 10px;
 	box-shadow: 0 4px 12px var(--primary-transparent-color);
 }
 
 .container h1 {
+	color: var(--primary-text-color);
+}
+
+.input-field {
+	width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-field .text {
+	position: absolute;
+	top: 7px;
+	z-index: 100;
 	color: var(--primary-text-color);
 }
 
@@ -26,13 +42,49 @@ body {
 	border-radius: 6px;
 }
 
-.result {
-	padding: 8px;
-	font-size: 14px;
-	background-color: var(--primary-background-color);
-	color: var(--secondary-text-color);
-	border: 1px solid #E5E7EB;
-	border-radius: 6px;
+#date-of-birth:valid + .text {
+	display: none;
+}
+
+.datetime-display {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 15px;
+}
+
+.datetime-display .date-group,
+.datetime-display .time-group {
+	width: 100%;
+}
+
+.datetime-display .title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.datetime-display .list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	list-style-type: none;
+}
+
+.datetime-display .list li {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-grow: 1;
+	gap: 5px;
+	border: 1.5px solid var(--primary-text-color);
+	border-radius: 4px;
 }
 
 #theme-color-button {
