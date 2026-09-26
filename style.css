@@ -5,8 +5,9 @@ body {
 }
 
 .container {
-	padding: 16px;
+	padding: 15px;
 	width: 95%;
+	max-width: 500px;
 	text-align: center;
 	background-color: var(--primary-background-color);
 	border: 1.5px solid var(--primary-accent-color);
@@ -105,4 +106,26 @@ body {
 #theme-color-button .icon {
 	width: 20px;
 	height: 20px;
+}
+
+@media screen and (max-width: 400px) {
+	.container {
+		padding: 10px;
+	}
+	
+	.container h1 {
+		font-size: 1em;
+	}
+
+	.datetime-display .title {
+		font-size: 1em;
+	}
+
+	.datetime-display .list li {
+		padding: 5px;
+	}
+	
+	.datetime-display .list strong {
+		font-size: 0.75em;
+	}
 }
